@@ -3,12 +3,12 @@ var async = require('async');
 var helpers = require('../../helpers');
 
 module.exports = {
-	title: 'Open CIFS',
+	title: '[R1301] Open CIFS',
 	category: 'EC2',
 	description: 'Determine if UDP port 445 for CIFS is open to the public',
 	more_info: 'While some ports such as HTTP and HTTPS are required to be open to the public to function properly, more sensitive services such as CIFS should be restricted to known IP addresses.',
 	link: 'http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/authorizing-access-to-an-instance.html',
-	recommended_action: 'Restrict UDP port 445 to known IP addresses',
+	recommended_action: '[C28] Restrict UDP port 445 to known IP addresses',
 
 	run: function(AWSConfig, cache, includeSource, callback) {
 		var results = [];

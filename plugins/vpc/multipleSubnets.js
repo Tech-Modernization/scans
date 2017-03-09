@@ -3,12 +3,12 @@ var async = require('async');
 var helpers = require('../../helpers');
 
 module.exports = {
-	title: 'Multiple networks/subnets are used in a VPC',
+	title: '[R0901] Multiple networks/subnets are used in a VPC',
 	category: 'VPC',
 	description: 'Ensures that VPC has multiple networks which provides a layered architecture',
 	more_info: 'A single network within a VPC exposes of a risk of increasing the impact radius in case of a compromisation.',
 	link: 'https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Subnets.html#SubnetSecurity',
-	recommended_action: 'Create multiple networks/subnets and change your architecture',
+	recommended_action: '[C18, C11] Create multiple networks/subnets and change your architecture',
 
 	run: function(AWSConfig, cache, includeSource, callback) {
 		var results = [];

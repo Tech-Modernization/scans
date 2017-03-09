@@ -3,12 +3,12 @@ var async = require('async');
 var helpers = require('../../helpers');
 
 module.exports = {
-	title: 'Open SQL Server',
+	title: '[R1301] Open SQL Server',
 	category: 'EC2',
 	description: 'Determine if TCP port 1433 or UDP port 1434 for SQL Server is open to the public',
 	more_info: 'While some ports such as HTTP and HTTPS are required to be open to the public to function properly, more sensitive services such as SQL server should be restricted to known IP addresses.',
 	link: 'http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/authorizing-access-to-an-instance.html',
-	recommended_action: 'Restrict TCP port 1433 and UDP port 1434 to known IP addresses',
+	recommended_action: '[C28] Restrict TCP port 1433 and UDP port 1434 to known IP addresses',
 
 	run: function(AWSConfig, cache, includeSource, callback) {
 		var results = [];

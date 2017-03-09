@@ -3,11 +3,11 @@ var async = require('async');
 var helpers = require('../../helpers');
 
 module.exports = {
-	title: 'CloudTrail Enabled',
+	title: '[R0301] CloudTrail Enabled',
 	category: 'CloudTrail',
 	description: 'Ensures CloudTrail is enabled for all regions within an account',
 	more_info: 'CloudTrail should be enabled for all regions in order to detect suspicious activity in regions that are not typically used.',
-	recommended_action: 'Enable CloudTrail for all regions and ensure that at least one region monitors global service events',
+	recommended_action: '[C07, C22] Enable CloudTrail for all regions and ensure that at least one region monitors global service events.',
 	link: 'http://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-getting-started.html',
 
 	run: function(AWSConfig, cache, includeSource, callback) {

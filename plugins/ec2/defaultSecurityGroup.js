@@ -3,12 +3,12 @@ var async = require('async');
 var helpers = require('../../helpers');
 
 module.exports = {
-	title: 'Default Security Group',
+	title: '[R0902] Default Security Group',
 	category: 'EC2',
 	description: 'Ensure the default security groups block all traffic by default',
 	more_info: 'The default security group is often used for resources launched without a defined security group. For this reason, the default rules should be to block all traffic to prevent an accidental exposure.',
 	link: 'http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-network-security.html#default-security-group',
-	recommended_action: 'Update the rules for the default security group to deny all traffic by default',
+	recommended_action: '[C18, C11] Update the rules for the default security group to deny all traffic by default',
 
 	run: function(AWSConfig, cache, includeSource, callback) {
 		var results = [];

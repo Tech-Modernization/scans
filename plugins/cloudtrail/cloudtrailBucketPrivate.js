@@ -3,11 +3,11 @@ var AWS = require('aws-sdk');
 var helpers = require('../../helpers');
 
 module.exports = {
-	title: 'CloudTrail Bucket Private',
+	title: '[R0302] CloudTrail Bucket Private',
 	category: 'CloudTrail',
 	description: 'Ensures CloudTrail logging bucket is not publicly accessible',
 	more_info: 'CloudTrail buckets contain large amounts of sensitive account data and should only be accessible by logged in users.',
-	recommended_action: 'Set the S3 bucket access policy for all CloudTrail buckets to only allow known users to access its files.',
+	recommended_action: '[C08, C09] Set the S3 bucket access policy for all CloudTrail buckets to only allow known users to access its files.',
 	link: 'http://docs.aws.amazon.com/AmazonS3/latest/dev/example-bucket-policies.html',
 
 	run: function(AWSConfig, cache, includeSource, callback) {

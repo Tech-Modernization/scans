@@ -77,12 +77,12 @@ var badCiphers = [
 ];
 
 module.exports = {
-	title: 'Insecure Ciphers',
+	title: '[BP17] Insecure Ciphers',
 	category: 'EC2',
 	description: 'Detect use of insecure ciphers on ELBs',
 	more_info: 'Various security vulnerabilities have rendered several ciphers insecure. Only the reccommended ciphers should be used.',
 	link: 'http://docs.aws.amazon.com/ElasticLoadBalancing/latest/DeveloperGuide/elb-security-policy-options.html',
-	recommended_action: 'Update your ELBs to use the reccommended cipher suites',
+	recommended_action: '[C33] Update your ELBs to use the reccommended cipher suites',
 
 	run: function(AWSConfig, cache, includeSource, callback) {
 		var results = [];

@@ -3,11 +3,11 @@ var AWS = require('aws-sdk');
 var helpers = require('../../helpers');
 
 module.exports = {
-	title: 'Config Service Enabled',
+	title: '[R0906] Config Service Enabled',
 	category: 'ConfigService',
 	description: 'Ensures the AWS Config Service is enabled to detect changes to account resources',
 	more_info: 'The AWS Config Service tracks changes to a number of resources in an AWS account and is invaluable in determining how account changes affect other resources and in recovery in the event of an account intrusion or accidental configuration change.',
-	recommended_action: 'Enable the AWS Config Service for all regions and resources in an account. Ensure that it is properly recording and delivering logs.',
+	recommended_action: '[C22] Enable the AWS Config Service for all regions and resources in an account. Ensure that it is properly recording and delivering logs.',
 	link: 'https://aws.amazon.com/config/details/',
 
 	run: function(AWSConfig, cache, includeSource, callback) {

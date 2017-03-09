@@ -3,12 +3,12 @@ var async = require('async');
 var helpers = require('../../helpers');
 
 module.exports = {
-	title: 'VPC Flow Logs Enabled',
+	title: '[R0903] VPC Flow Logs Enabled',
 	category: 'VPC',
 	description: 'Ensures VPC flow logs are enabled for traffic logging',
 	more_info: 'VPC flow logs record all traffic flowing in to and out of a VPC. These logs are critical for auditing and review after security incidents.',
 	link: 'http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/flow-logs.html',
-	recommended_action: 'Enable VPC flow logs for each VPC',
+	recommended_action: '[C20] Enable VPC flow logs for each VPC',
 
 	run: function(AWSConfig, cache, includeSource, callback) {
 		var results = [];

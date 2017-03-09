@@ -3,12 +3,12 @@ var async = require('async');
 var helpers = require('../../helpers');
 
 module.exports = {
-	title: 'Open MySQL',
+	title: '[R1301] Open MySQL',
 	category: 'EC2',
 	description: 'Determine if TCP port 4333 or 3306 for MySQL is open to the public',
 	more_info: 'While some ports such as HTTP and HTTPS are required to be open to the public to function properly, more sensitive services such as MySQL should be restricted to known IP addresses.',
 	link: 'http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/authorizing-access-to-an-instance.html',
-	recommended_action: 'Restrict TCP ports 4333 and 3306 to known IP addresses',
+	recommended_action: '[C28] Restrict TCP ports 4333 and 3306 to known IP addresses',
 
 	run: function(AWSConfig, cache, includeSource, callback) {
 		var results = [];
